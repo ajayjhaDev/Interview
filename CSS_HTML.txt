@@ -3,3 +3,5 @@ diff b/w display none and visibility hidden
 position all values diff
 diff flex and grid
 Doctype in html meta tags and their attributes
+box sizing
+css selector preference
