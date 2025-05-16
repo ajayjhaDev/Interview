@@ -1,2 +1,18 @@
-count the occurrences of each character in a string
-find second highest number in array
+- find a pair with the given sum in an array of target value
+- remove duplicate from the array
+- find duplicates in an array
+- move all negative numbers to beginning and positive to end
+- sort array of objects basis of name and age also
+- remove duplicate in array of objects
+- find second highest number in array
+
+- reverse each words of "ajay kumar jha" > "yaja ramuk ahj”
+- count total characters of "ajay kumar jha" > { a: 4, j: 2, y: 1, ' ': 2, k: 1, u: 1, m: 1, r: 1, h: 1 }
+- count total words of "ajay kumar jha”
+- find the number of vowels and consonants in any given string
+- Given two strings, return true if they are anagrams of one another
+- check string is palindrome or not
+- Longest Word https://coderbyte.com/editor/Longest%20Word:JavaScript
+- occurrence of each repeating character   
+    Input: "aabbcde"  Output: 2a2b1c1d1e 
+    Input: "wwwbbbw"  Output: 3w3b1w        
