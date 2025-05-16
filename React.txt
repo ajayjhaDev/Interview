@@ -3,3 +3,4 @@ controlled and uncontrolled
 useMemo usecallback
 useRef createRef
 How to optimize react application
+diff b/w ssr and csr
