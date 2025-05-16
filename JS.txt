@@ -37,6 +37,6 @@ call apply and bind
 calculator.add(3).substract(5).multiply(6).getResult()
 diff b/w deep copy and shallow copy
 currying
-
+Closures
 
 
