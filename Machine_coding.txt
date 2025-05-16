@@ -1,1 +1,4 @@
+implement debounce using custom hook in search input
 
+create a delay function which take two argument time and true or false and return a promise 
+now create a function which take promise array and based on result show in ui resolve , reject and pending
