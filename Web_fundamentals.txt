@@ -1,1 +1,3 @@
-
+diff between sessionstorage and localstorage
+what is cookies and What are cookies used for
+diff between authentication and authorization
