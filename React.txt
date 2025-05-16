@@ -2,3 +2,4 @@ Shallow Dom and Virtual Dom
 controlled and uncontrolled
 useMemo usecallback
 useRef createRef
+How to optimize react application
