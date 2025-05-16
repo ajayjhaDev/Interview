@@ -1,1 +1,2 @@
-
+count the occurrences of each character in a string
+find second highest number in array
