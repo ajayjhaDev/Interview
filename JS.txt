@@ -39,4 +39,8 @@ diff b/w deep copy and shallow copy
 currying
 closures
 debouncing and throttling
+event loop
+Microtask Queue 
+
+
 
