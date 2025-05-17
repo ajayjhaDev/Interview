@@ -41,6 +41,6 @@ closures
 debouncing and throttling
 event loop
 Microtask Queue 
-
+diff b/w normal function and arrow function
 
 
