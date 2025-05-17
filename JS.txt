@@ -43,4 +43,18 @@ event loop
 Microtask Queue 
 diff b/w normal function and arrow function
 
+const person = {
+  name: "Alice",
+  sayHello: function () {
+    console.log("Normal:", this.name); // 'this' refers to person
+  },
+  sayHelloArrow: () => {
+    console.log("Arrow:", this.name); // 'this' refers to the outer scope, not person
+  }
+};
+
+person.sayHello();       // Normal: Alice
+person.sayHelloArrow();  // Arrow: undefined (or window.name if in browser)
+
+
 
