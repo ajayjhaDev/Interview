@@ -5,6 +5,12 @@
     console.log(4);
 })();
 
+let foo = 10;
+(function(){
+    console.log(foo)
+    let foo = 100
+})();
+
 for (let i = 0; i < 5; i++) {
   setTimeout(function() { console.log(i); }, i * 1000 );
 }
