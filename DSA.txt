@@ -16,3 +16,4 @@
 - occurrence of each repeating character   
     Input: "aabbcde"  Output: 2a2b1c1d1e 
     Input: "wwwbbbw"  Output: 3w3b1w        
+- Write a function that takes n number of arrays of integers and returns an array of distinct integers i.e the integers should appear only once among the input arrays. Example: [1,2,3], [2,3,4], [3,4,5] => [1,5]. Note: number of arrays can be n.
