@@ -1,6 +1,7 @@
 Shallow Dom and Virtual Dom
 controlled and uncontrolled
-useMemo usecallback
+useEffect useMemo usecallback
 useRef createRef
 How to optimize react application
-diff b/w ssr and csr
+diff b/w ssg, ssr and csr
+features of Next.js 
