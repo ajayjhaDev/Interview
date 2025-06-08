@@ -1,4 +1,12 @@
 Shallow Dom and Virtual Dom
+   Shadow DOM works by allowing us to attach a hidden, separate Document Object Model (DOM) to an element. 
+   This hidden DOM is known as the Shadow DOM 
+   while Virtual DOM is like a lightweight copy of the Real DOM,
+         manipulating Virtual DOM is fast as compare to Real DOM.
+         It forms a node tree elements, their attributes, and content as JS Objects and their properties.
+         and When the state of an object changes, the virtual DOM changes only that object in the real DOM, 
+         rather than updating all the objects
+
 controlled and uncontrolled
 useEffect useMemo usecallback
 useRef createRef
