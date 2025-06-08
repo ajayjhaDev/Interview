@@ -7,9 +7,41 @@ Shallow Dom and Virtual Dom
          and When the state of an object changes, the virtual DOM changes only that object in the real DOM, 
          rather than updating all the objects
 
-controlled and uncontrolled
+controlled and uncontrolled component
+  A controlled component is a form element (like <input>, <textarea>, or <select>) 
+  whose value is controlled by React state.
+  An uncontrolled component manages its own state internally in the DOM.
+  React does not control the value. Instead, we access it using a ref.
+
 useEffect useMemo usecallback
-useRef createRef
+ useEffect - Used to perform side effects like API calls, DOM updates, subscriptions, etc.
+ The useMemo and useCallback both are use to reducing unnecessary re-renders. 
+ The main difference is that useMemo returns a memoized value and useCallback returns a memoized function. 
+
 How to optimize react application
+  1. Use React.memo for Component Memoization
+      - Prevents re-rendering of functional components unless props change.
+  2. Use useCallback and useMemo 
+      - Avoid re-creating functions or recalculating values unnecessarily.
+  3. Code Splitting with React.lazy and Suspense
+      - Split our codebase into smaller chunks to load parts on demand.
+  4. Use virtualization for long lists (react-window, react-virtualized)
+  5. Optimize Images and Assets
+      - Use WebP format.
+      - Lazy load images using loading="lazy".
+  6. Server-Side Rendering (SSR) / Static Site Generation (SSG)
+     Use frameworks like Next.js to pre-render pages for better performance and SEO.
+
 diff b/w ssg, ssr and csr
+  SSR - on request server generating the full HTML content for a page and sending it to the browser
+  CSR - browser loads a minimal HTML document then JavaScript retrieves data from the server and generates the HTML dynamically
+  SSG - SSG (Static Site Generation) means generating HTML at build time, not on each request. 
+        The generated pages are static HTML files, which are super fast to load and SEO-friendly
+
 features of Next.js 
+  1. File-based Routing
+  2. SSR and SSG
+  3. API Routes
+  4. SEO Friendly
+  5. Image Optimization
+      The <Image /> component automatically optimizes images for faster loading.
