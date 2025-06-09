@@ -43,11 +43,48 @@ call apply and bind
 calculator.add(3).substract(5).multiply(6).getResult()
 diff b/w deep copy and shallow copy
 currying
+ - Currying is a functional programming technique where a function with multiple arguments is 
+   transformed into a sequence of functions, 
+   each taking a single argument.
+   function add(a) {
+     return function(b) {
+       return a + b;
+     };
+   }
+
+   console.log(add(2)(3)); // 5
+
 closures
+  closure is the combination of lexical scope and local scope of inner function.
+  Lexical Scope defines that inner functions can access the scope of parent functions even if they has returned.
+
+ function foo(a){
+  let x = a + 10;
+   return function(){
+    return 5 + x;
+  }
+}
+
+let t = foo(6);
+let total = t()
+console.log(total)
+
 debouncing and throttling
+  Debouncing and throttling are two important techniques in JavaScript 
+  used to limit function execution
+  Debounce delays function execution until a pause in events, 
+  while throttle limits function execution to once per fixed interval
+
 event loop
 Microtask Queue 
+ - Microtask Queue is like the Callback Queue, but Microtask Queue has higher priority. 
+   All the callback functions coming through Promises and Mutation Observer will go inside the Microtask Queue.
+
 diff b/w normal function and arrow function
+ - 	Normal Hoisted (can be used before declaration)
+    Arrow Not hoisted (must be defined before use)
+    this binding Normal Has its own this but Arrow Doesn’t have
+    Normal Constructor Can be used with new (constructors) Arrow Cannot be used as a constructor
 
 const person = {
   name: "Alice",
