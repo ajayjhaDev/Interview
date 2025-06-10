@@ -130,5 +130,5 @@ const person = {
 person.sayHello();       // Normal: Alice
 person.sayHelloArrow();  // Arrow: undefined (or window.name if in browser)
 
-
+Implement a debounce function using vanilla JavaScript
 
