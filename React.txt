@@ -1,3 +1,9 @@
+How React works internally
+What is React Fiber?
+Explain the Redux data flow
+Where have you used closures in React, and why?
+What’s new in React 19
+
 Shallow Dom and Virtual Dom
    Shadow DOM works by allowing us to attach a hidden, separate Document Object Model (DOM) to an element. 
    This hidden DOM is known as the Shadow DOM 
