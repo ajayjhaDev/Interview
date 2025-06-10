@@ -40,8 +40,39 @@ console.log(boundGetX());
 
 this keyword
 call apply and bind
+ function greet(greeting, name) {
+    console.log(`${greeting}, ${name}! My name is ${this.myName}.`);
+  }
+
+const person = { myName: 'Ajay' };
+
+greet.call(person, 'Hello', 'John');     // Hello, John! My name is Ajay.
+greet.apply(person, ['Hi', 'Jane']);     // Hi, Jane! My name is Ajay.
+
+const boundGreet = greet.bind(person, 'Hey');
+boundGreet('Alex');                      // Hey, Alex! My name is Ajay.
+
+call() – Calls function immediately with given this and arguments.
+
+apply() – Like call(), but arguments are passed as an array.
+
+bind() – Doesn't call immediately, returns a new function with this bound.
+
 calculator.add(3).substract(5).multiply(6).getResult()
 diff b/w deep copy and shallow copy
+ let original = { a: 1, b: { c: 2 } };
+
+ let shallow = { ...original };
+ shallow.b.c = 42;
+ console.log(original.b.c); // 42 (affected)
+
+ let deep = JSON.parse(JSON.stringify(original));
+ deep.b.c = 100;
+ console.log(original.b.c); // 42 (not affected)
+
+ In Shallow copy shared the Referenced and affected original 
+ while In Deep Copy Doesn’t affect the original and doesn't shared the Referenced
+
 currying
  - Currying is a functional programming technique where a function with multiple arguments is 
    transformed into a sequence of functions, 
